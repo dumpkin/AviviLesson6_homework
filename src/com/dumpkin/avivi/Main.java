@@ -15,7 +15,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Exersise1 _________________________________________________
+        // Exercise 1 _________________________________________________
 
         System.out.println("divide 34.6/235: " + MyMath.divide(34.6, 235d));
         System.out.println("substract 34-47: " + MyMath.subtract(34, 47));
@@ -25,10 +25,21 @@ public class Main {
         System.out.println("constant Euler's number is " + MyMath.E);
         //____________________________________________________________
 
+        // Exercise 2 _________________________________________________
         System.out.println("\n\n");
         Cow cow1 = new Cow("Zirka", "brown");
         System.out.printf("What dose the %s say?\n",cow1.whatDoseThePets());
         cow1.petSay();
 
+        System.out.println("\n\n");
+        Cat kitty= new Cat("Murzik",5);
+        System.out.printf("What dose the %s say?\n",kitty.whatDoseThePets());
+        kitty.petSay();
+
+
+        System.out.println("\n\n");
+        Dog pes= new Dog("Jack",3,"doberman");
+        System.out.printf("What dose the %s say?\n",pes.whatDoseThePets());
+        pes.petSay();
     }
 }
